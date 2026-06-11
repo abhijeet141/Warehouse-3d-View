@@ -743,7 +743,7 @@
         <line x1="16.5" y1="16.5" x2="21" y2="21" />
       </svg>
       <input
-        class="find-input" type="text" placeholder="Search location… e.g. N11G03 or A01"
+        class="find-input" type="text" placeholder="Search location… e.g. N11G03 or A25"
         bind:this={findInputEl}
         bind:value={findQuery}
         on:input={updateSuggestions}
