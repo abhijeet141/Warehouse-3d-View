@@ -156,9 +156,9 @@ export class RailControls {
     const n = this.aisles.length;
     this.index = ((index % n) + n) % n;
     const a = this.aisles[this.index];
-    this.dist = a.length / 2; // drop in at the middle of the aisle
+    this.dist = 0; // drop in at the start of the aisle, beside the first rack
     if (faceForward) {
-      this.yaw = Math.atan2(-a.dir.x, -a.dir.z); // face toward 'end'
+      this.yaw = Math.atan2(-a.dir.x, -a.dir.z); // face down the aisle toward 'end'
       this.pitch = 0;
     }
     this.onChange?.({ index: this.index, name: a.name, total: n });
