@@ -28,7 +28,8 @@
   } = { size: 300000, cellSize: 2000, sectionSize: 10000, centerXZ: [53700, 43525], fadeDistance: 400000, fadeStrength: 1 };
   export let floorY = 100;
 
-  export let walk: { eyeHeight: number; moveSpeed: number; fov: number } = { eyeHeight: 1700, moveSpeed: 6000, fov: 70 };
+  // eyeHeight: drop in at the third rack level (C: 5200–7700mm) rather than the floor
+  export let walk: { eyeHeight: number; moveSpeed: number; fov: number } = { eyeHeight: 6450, moveSpeed: 6000, fov: 70 };
 
   const COLOR_MAP: Record<SegmentType, number> = {
     AISLE: 0x3b82f6,
